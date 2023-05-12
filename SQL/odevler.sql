@@ -527,9 +527,3 @@ FROM payment
 GROUP BY customer_id
 ORDER BY num_purchases DESC;
 
-
-SELECT customer_id, COUNT(*) alisveris_sayisi
-	FROM payment
-	GROUP BY customer_id
-	ORDER BY alisveris_sayisi DESC;
-
