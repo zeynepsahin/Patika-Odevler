@@ -251,11 +251,10 @@ SELECT store_id, COUNT(customer_id)
 --en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
 
 
-SELECT country_id , COUNT(country_id)
-	FROM city
-	GROUP BY country_id
-	ORDER BY COUNT(country_id)
-	LIMIT 1;
+SELECT country_id, COUNT(*) FROM city
+                          GROUP BY country_id
+                          ORDER BY COUNT(*) DESC
+                          LIMIT 1;
 	
 	
 --************************************************************************************************************--
